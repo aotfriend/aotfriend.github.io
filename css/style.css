@@ -1,0 +1,39 @@
+song-link,
+song-link:hover,
+song-link:visited,
+song-link:focus,
+song-link:active {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.song-link,
+.song-link:hover {
+  transition: all .2s;
+  color: #438BCB;
+}
+
+.song-link:hover {
+  color: #363636;
+}
+
+donate,
+donate:hover,
+donate:visited,
+donate:focus,
+donate:active {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.donate,
+.donate:hover {
+  transition: all .2s;
+  color: #438BCB;
+}
+
+.donate:hover {
+  color: #FFFFFF;
+}
