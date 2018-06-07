@@ -4,7 +4,6 @@ if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $subject = "Contact from AOTTG Friend Mod";
     $message = $name . " wrote the following:" . "\n\n" . $_POST['comment'];
-
     $headers = "[" . $_POST['section'] . "] From:" . $name;
     mail($to,$subject,$message,$headers);
     echo "Mail Sent. Thank you " . $name . ", we will accept your submit shortly.";
