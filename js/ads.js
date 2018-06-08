@@ -1,13 +1,15 @@
-/*document.addEventListener('DOMContentLoaded', function() {
-  
+document.addEventListener('DOMContentLoaded', function() {
   var nDIV = document.createElement("DIV");
-  nDIV.className = "adsblock";
-  nDIV.innerHTML = "Ads";
-  nDIV.title = "Google Ads";
-  nDIV.width = "100%";
-  nDIV.height = "auto";
-  
-  document.getElementsByTagName("body")[0].appendChild(nDIV);
+  nDIV.className = "adsblock-content";
+  nDIV.innerHTML = "<ins class=\"adsbygoogle\"
+  style=\"display:inline-block;width:100%;\"
+  data-ad-client=\"ca-pub-6915385022840539\"
+  data-ad-slot=\"2259532232\"></ins>";
+  var DIV = document.createElement("DIV");
+  DIV.className = "adsblock";
+  DIV.title = "Google Ads";
+  DIV.appendChild(nDIV);
+  document.getElementsByTagName("body")[0].appendChild(DIV);
   
 });
 
@@ -21,4 +23,4 @@ window.onscroll = function(){
         document.getElementsByClassName("adsblock")[0].style.display = "none";
     }
 }
-*/
+
