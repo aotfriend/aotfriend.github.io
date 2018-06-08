@@ -24,16 +24,33 @@ HTML::-webkit-scrollbar-thumb
    width: 95%;
    z-index: 1;
    bottom: 0;
-   margin-bottom: 5px;
+   left: 0;
+   right: 0;
+   margin: 5% auto;
    overflow: hidden;
    text-align: center;
-   background-color: rgba(0,255,255,0.5);
-   box-shadow: 0px 2px 0px black;
-   border-radius: 10px;
+   background-color: rgba(255,255,255,0.9);
+   box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+   border-radius: .5px;
    z-index: 2;
    -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
    user-select: none;
-   transition: display 3050ms linear;
+   box-sizing: border-box;
+   z-index: 9999;
+   opacity: 1; 
+   transform: translateY(-20px); 
+   -moz-transition: all .5s ease; 
+   -o-transition: all .5s ease; 
+   -webkit-transition: all .5s ease; 
+   transition: all .5s ease;
+}
+.adsblock .adsblock-content {
+   padding: 10px;
+   border-top: 0 none;
+   box-sizing: border-box;
+   max-width: 600px;
+   margin: 0 auto;
+   position: relative;
 }
