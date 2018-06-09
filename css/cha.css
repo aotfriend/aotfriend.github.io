@@ -38,6 +38,7 @@ HTML::-webkit-scrollbar-thumb
    -ms-user-select: none;
    user-select: none;
    box-sizing: border-box;
+   margin-bottom: -5px;
    z-index: 9999;
    opacity: 1; 
    transform: translateY(-20px); 
@@ -47,8 +48,6 @@ HTML::-webkit-scrollbar-thumb
    transition: all .5s ease;
 }
 .adsblock .adsblock-content {
-   padding: 10px;
-   border-top: 0 none;
    box-sizing: border-box;
    max-width: 600px;
    margin: 0 auto;
