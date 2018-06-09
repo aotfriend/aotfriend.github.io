@@ -47,7 +47,7 @@ HTML::-webkit-scrollbar-thumb
    -webkit-transition: all .5s ease; 
    transition: all .5s ease;
 }
-.adsblock .adsblock-content {
+.adsblock-content {
    box-sizing: border-box;
    max-width: 600px;
    margin: 0 auto;
