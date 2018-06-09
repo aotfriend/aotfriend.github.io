@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var DIV = document.createElement("DIV");
   DIV.className = "adsblock";
   DIV.title = "Google Ads";
-  nDIV.insertBefore(Script,nDIV);
-  nDIV.insertAfter(ScriptA,nDIV);
+  nDIV.parentNode.insertBefore(Script,nDIV);
+  nDIV.parentNode.insertBefore(nDIV,ScriptA);
   DIV.appendChild(nDIV);
   document.getElementsByTagName("body")[0].appendChild(DIV);
   
