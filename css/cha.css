@@ -20,8 +20,9 @@ HTML::-webkit-scrollbar-thumb
 .adsblock {
    display: none;
    position: fixed;
-   height: 60px;
+   //height: 60px;
    width: 95%;
+   max-width: 600px;
    z-index: 1;
    bottom: 0;
    left: 0;
@@ -49,7 +50,17 @@ HTML::-webkit-scrollbar-thumb
 }
 .adsblock-content {
    box-sizing: border-box;
-   max-width: 600px;
-   margin: 0 auto;
    position: relative;
+}
+#img {
+   zoom: 2;
+   
+   display: block;
+   margin: auto;
+   
+   height: auto;
+   max-height: 100%;
+   
+   width: auto;
+   max-width: 100%;
 }
