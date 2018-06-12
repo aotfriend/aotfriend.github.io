@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login - member</title>
+    <title>Login - Friend Mod</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="../css/bulma.css">
     <link rel="stylesheet" href="../css/bulma-divider.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../css/login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110867635-2"></script>
@@ -38,45 +40,9 @@
     </script>
     
     <script type="text/javascript">
-    window.onload = function(){
     
-    var username = document.getElementById("username");
-    var password = document.getElementById("password");
-    password.onkeypress = function(event){
-    checkEnterPressed(this,event);
-    event.cancelBubble = true;
-    if (event.stopPropagation) event.stopPropagation();
-    };
-    document.onkeypress = function(event){
-    checkEnterPressed(this,event);
-    event.cancelBubble = true;
-    if (event.stopPropagation) event.stopPropagation();
-    };
-    
-    }
-    
-    function checkEnterPressed(obj, event){
-    if(event.keyCode === 13){
-    alert("Login form was submitted by ENTER key!");
-    }
-    }
-    
-    function doProcessing(){
-    if (username.value == "" || password.value == "") {
-      alert("Please enter username&password");
-      return;
-    }
-    
-    alert("Login form was submitted by BUTTON Click!");
-    }
     </script>
     <style>
-      body {
-        background-color: #4a4a4a;
-      }
-      form,fieldset {
-        border: none;
-      }
     </style>
   </head>
   <body>
@@ -111,23 +77,62 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <img src="../images/Chakung.png?p=2" style="border-radius: 180px;">
-          <h1 class="title has-text-white">Login</h1>
+          <h1 class="title has-text-white">LOG IN</h1>
+          <style>
+	
           
-          <form id="Login" action="">
-          <fieldset>
-          <p class="has-text-left">Username:</p>
-          <input id="username" type="text" style="width:100%"/>
-          <p class="has-text-left">Password:</p>
-          <input id="password" type="password" style="width:100%"/>
-          <input id="submit" type="button" value="Login" onClick="JavaScript:doProcessing()"/>
-          </fieldset>
+          </style>
+          <form class="validate-form" action="">
+          
+          
+          <div class="wrap-inputline validate-input" data-validate="Enter username">
+          <input class="inputline" id="username" type="text" name="username" placeholder="Username">
+          <span class="focus-inputline" data-placeholder="&#xf207;"></span>
+          </div>
+          
+          <div class="wrap-inputline validate-input" data-validate="Enter password">
+          <input class="inputline" id="password" type="password" name="password" placeholder="Password">
+          <span class="focus-inputline" data-placeholder="&#xf191;"></span>
+          </div>
+          
+          
+          <div class="contact-form-checkbox">
+          <input class="input-checkbox" id="keep_login" type="checkbox" name="remember-me">
+          <label class="label-checkbox" for="keep_login">
+          Remember me
+          </label>
+          
+          </div>
+          
+          <div class="container-login-form-btn">
+          <button class="login-form-btn">
+          Login
+          </button>
+          </div>
+          
+          <div style="padding-top: 50px">
+          <a class="forget-pwd" href="#">
+          Forgot Password?
+          </a>
+          </div>
+          
+          
+          <div style="padding-top: 20px">
+          <a class="register" href="../register/index.html">
+          Click here to Register.
+          </a>
+          </div>
+          
           </form>
         </div>
       </div>
-      <div style="height:100px">
+      <div style="height:100%">
       </div>
     </header>
+
     <script src="../js/cha.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/login.js"></script>
+    
   </body>
 </html>
